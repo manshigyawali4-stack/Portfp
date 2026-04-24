@@ -106,3 +106,53 @@ footer {
 {
     text-align: center;
 }
+.banner
+{
+    align-items: center;
+    background-color:white;
+    height: 700px;
+    width: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+    
+}
+.banner img{
+    align-items: center;
+    height:100%;
+    width:400px;
+    object-fit: cover;
+}
+
+@media(max-width:480px){
+  body{
+  background-color:paleturquoise;
+}
+.logo{
+    height: 40px;
+    width:40px;
+    font-size:14px;
+}
+.menu{
+    display:none
+}
+.menu_icon{
+    display: block;
+    height: 40px;
+    width:40px;
+}
+.menu_icon svg{
+    color: black;
+   
+    
+}
+.menu_icon svg path{
+       stroke: black !important;
+
+}
+.banner img{
+    height:70%;
+    width:300px;
+}
+}
