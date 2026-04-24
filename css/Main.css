@@ -56,6 +56,9 @@ nav .logo {
     font-size:large;
     border: 1px solid black;
 }
+.menu_icon{
+    Display:none;
+}
 /* MAIN CONTENT */
 .content {
     max-width: 700px;
