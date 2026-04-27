@@ -58,6 +58,7 @@ nav .logo {
 }
 .menu_icon{
     Display:none;
+    
 }
 /* MAIN CONTENT */
 .content {
@@ -115,10 +116,9 @@ footer {
     background-color:white;
     height: 700px;
     width: 100%;
-
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+     align-items: center;
     
 }
 .banner img{
@@ -126,6 +126,68 @@ align-items: center;
     height:100%;
     width:400px;
     object-fit: cover;
+
+}
+.banner_main{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    width: 90%;
+    margin: 0px auto;
+    
+}
+.banner_data{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    justify-content: center;
+;
+}
+.banner_data h1{
+    margin:0px;
+    padding:0px;
+    font-size: 44px;
+    font-style: italic;
+}
+.banner_data div{
+    font-size: 38px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.banner_buttons button{
+    background-color: #a91331;
+    padding: 10px 22px;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-size: 18px;
+    animation:alternate infinite .5s buttonanimate ;
+
+}
+.banner{
+    background-color: palevioletred;
+    height: 600x;
+    width: 60%
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+@keyframes buttonanimate {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+     50%{
+        background-color: rgb(0, 255, 229);
+    }
+     75%{
+        background-color:coral;
+    }
+     100%{
+        background-color: greenyellow
+    }
 }
 
 @media(max-width:480px){
@@ -136,6 +198,7 @@ align-items: center;
     height: 40px;
     width:40px;
     font-size:14px;
+
 }
 .menu{
     display:none
@@ -157,5 +220,40 @@ align-items: center;
 .banner img{
     height:70%;
     width:300px;
+}
+.banner_main{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    
+}
+.banner_data{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    justify-content: center;
+;
+}
+.banner_data h1{
+    margin:0px;
+    padding:0px;
+    font-size: 44px;
+    font-style: italic;
+}
+.banner_data div{
+    font-size: 38px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.banner_buttons button{
+    background-color: #a81b1b;
+    padding: 10px 22px;
+    color: rgb(0, 0, 0);
+    border:none;
+    border-radius: 10px;
+
+}
+.banner{
+    background-color: palevioletred;
 }
 }
